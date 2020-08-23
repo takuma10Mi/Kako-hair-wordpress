@@ -21,9 +21,26 @@
         <p>hair and make</p>
         <p>kako</p>
       </div>
+      <div id="nav-drawer">
+        <input id="nav-input" type="checkbox" class="nav-unshown">
+        <label id="nav-open" for="nav-input"><span></span></label>
+        <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+        <div id="nav-content">
+          <p>hair and make</p>
+          <p id="sub_name">kacco</p>
+          <ul>
+            <a href=""></a>
+            <li><a href="#1">Topics</a></li>
+            <li><a href="#2">Gallerys</a></li>
+            <li><a href="#3">Menus</a></li>
+            <li><a href="#4">Stylist</a></li>
+            <li><a href="#5">Access</a></li>
+          </ul>
+        </div>
+    </div>
     </header>
     <section class="top-img"></section>
-    <section class="topics">
+    <section class="topics" id="1">
       <div class="head-name">
         <h2>Topics</h2>
         <p>トッピクス</p>
@@ -91,113 +108,83 @@
         </article>
       </div>
     </section>
-    <section class="gallery">
+    <section class="topics" id="2">
       <div class="head-name">
         <h2>Gallery</h2>
         <p>ギャラリー</p>
       </div>
-      <div class="galleries">
-        <div class="gallery-box">
-          <p class="gallery-img"><img src="img/Image@2x.png" /></p>
-          <p class="gallery-title">タイトルが入ります</p>
-          <p class="gallery-date">2020.01.01</p>
-          <ul>
-            <li>Medium</li>
-            <li>Medium</li>
-          </ul>
-        </div>
-        <div class="gallery-box">
-          <p class="gallery-img"><img src="img/Image@2x.png" /></p>
-          <p class="gallery-title">タイトルが入ります</p>
-          <p class="gallery-date">2020.01.01</p>
-          <ul>
-            <li>Medium</li>
-            <li>Medium</li>
-          </ul>
-        </div>
-        <div class="gallery-box">
-          <p class="gallery-img"><img src="img/Image@2x.png" /></p>
-          <p class="gallery-title">タイトルが入ります</p>
-          <p class="gallery-date">2020.01.01</p>
-          <ul>
-            <li>Medium</li>
-            <li>Medium</li>
-          </ul>
-        </div>
-        <div class="gallery-box">
-          <p class="gallery-img"><img src="img/Image@2x.png" /></p>
-          <p class="gallery-title">タイトルが入ります</p>
-          <p class="gallery-date">2020.01.01</p>
-          <ul>
-            <li>Medium</li>
-            <li>Medium</li>
-          </ul>
-        </div>
-        <div class="gallery-box">
-          <p class="gallery-img"><img src="img/Image@2x.png" /></p>
-          <p class="gallery-title">タイトルが入ります</p>
-          <p class="gallery-date">2020.01.01</p>
-          <ul>
-            <li>Medium</li>
-            <li>Medium</li>
-          </ul>
-        </div>
-        <div class="gallery-box">
-          <p class="gallery-img"><img src="img/Image@2x.png" /></p>
-          <p class="gallery-title">タイトルが入ります</p>
-          <p class="gallery-date">2020.01.01</p>
-          <ul>
-            <li>Medium</li>
-            <li>Medium</li>
-          </ul>
-        </div>
+      <div class="container">
+        <article>
+          <p class="topic-img"><img src="img/Image@2x.png" /></p>
+          <div class="topic-item">
+            <p class="topic-title">タイトルが入ります</p>
+            <p class="topic-date">2020.01.01</p>
+          </div>
+        </article>
+        <article>
+          <p class="topic-img"><img src="img/Image@2x.png" /></p>
+          <div class="topic-item">
+            <p class="topic-title">タイトルが入ります</p>
+            <p class="topic-date">2020.01.01</p>
+          </div>
+        </article>
+        <article>
+          <p class="topic-img"><img src="img/Image@2x.png" /></p>
+          <div class="topic-item">
+            <p class="topic-title">タイトルが入ります</p>
+            <p class="topic-date">2020.01.01</p>
+          </div>
+        </article>
+        <article>
+          <p class="topic-img"><img src="img/Image@2x.png" /></p>
+          <div class="topic-item">
+            <p class="topic-title">タイトルが入ります</p>
+            <p class="topic-date">2020.01.01</p>
+          </div>
+        </article>
+        <article>
+          <p class="topic-img"><img src="img/Image@2x.png" /></p>
+          <div class="topic-item">
+            <p class="topic-title">タイトルが入ります</p>
+            <p class="topic-date">2020.01.01</p>
+          </div>
+        </article>
+        <article>
+          <p class="topic-img"><img src="img/Image@2x.png" /></p>
+          <div class="topic-item">
+            <p class="topic-title">タイトルが入ります</p>
+            <p class="topic-date">2020.01.01</p>
+          </div>
+        </article>
       </div>
     </section>
-    <section class="menu">
+    <section class="menu" id="3">
       <div class="head-name">
         <h2 id="menu-title-color">Menu</h2>
         <p id="menu-title-color">料金表</p>
       </div>
       <div class="menu-box">
         <div class="menu-one">
-          <p>Cut</p>
-          <p class="menu-sub-name">カットメニュー</p>
+          <p class="menu-sub-name">Cut</p>
+          <p class="menu-sub-name-border">カットメニュー</p>
           <ul>
-            <li>カット(小学生まで)<span class="yen-font">&yen;1200<span></li>
-            <li>カット(小学生まで)<span class="yen-font">&yen;1200<span></li>
-            <li>カット(小学生まで)<span class="yen-font">&yen;1200<span></li>
+            <li>カット(小学生まで)<span class="yen-font">&yen;1200</span></li>
+            <li>カット(小学生まで)<span class="yen-font">&yen;1200</span></li>
+            <li>カット(小学生まで)<span class="yen-font">&yen;1200</span></li>
           </ul>
         </div>
         <div class="menu-one">
-          <p>Cut</p>
-          <p class="menu-sub-name">カットメニュー</p>
+          <p class="menu-sub-name">Cut</p>
+          <p class="menu-sub-name-border">カットメニュー</p>
           <ul>
-            <li>カット(小学生まで)<span class="yen-font">&yen;1200<span></li>
-            <li>カット(小学生まで)<span class="yen-font">&yen;1200<span></li>
-            <li>カット(小学生まで)<span class="yen-font">&yen;1200<span></li>
-          </ul>
-        </div>
-        <div class="menu-one">
-          <p>Cut</p>
-          <p class="menu-sub-name">カットメニュー</p>
-          <ul>
-            <li>カット(小学生まで)<span class="yen-font">&yen;1200<span></li>
-            <li>カット(小学生まで)<span class="yen-font">&yen;1200<span></li>
-            <li>カット(小学生まで)<span class="yen-font">&yen;1200<span></li>
-          </ul>
-        </div>
-        <div class="menu-one">
-          <p>Cut</p>
-          <p class="menu-sub-name">カットメニュー</p>
-          <ul>
-            <li>カット(小学生まで)<span class="yen-font">&yen;1200<span></li>
-            <li>カット(小学生まで)<span class="yen-font">&yen;1200<span></li>
-            <li>カット(小学生まで)<span class="yen-font">&yen;1200<span></li>
+            <li>カット(小学生まで)<span class="yen-font">&yen;1200</span></li>
+            <li>カット(小学生まで)<span class="yen-font">&yen;1200</span></li>
+            <li>カット(小学生まで)<span class="yen-font">&yen;1200</span></li>
           </ul>
         </div>
       </div>
     </section>
-    <section class="stylist-info">
+    <section class="stylist-info" id="4">
       <p><img src="img/グループ 1536.svg" alt=""></p>
       <div class="stylist-box">
         <p id="stylist-name">山田太郎</p>
@@ -205,13 +192,13 @@
         <p id="stylist-content">親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。なぜそんな無闇をしたと聞く人があるかも知れぬ。別段深い理由でもない。新築の二階から首を出していたら、同級生の一人が冗談に、いくら威張っても、そこから飛び降りる事は出来まい。弱虫やーい。と囃したからである。小使に負ぶさって帰って来た時、おやじが大きな眼をして二階ぐらいから飛び降りて腰を抜かす奴があるかと云ったから、この次は抜かさずに飛んで見せますと答えた。</p>
       </div>
     </section>
-    <section class="access-info">
+    <section class="access-info" id="5">
       <div class="head-name">
         <h2>Access</h2>
         <p>アクセス</p>
       </div>
       <div class="access-box">
-        <p class="map"><img src="img/Map.svg" alt=""></p>
+        <p class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3529.0347823142597!2d128.89440591503538!3d27.808700227637456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34e193642a2e16c1%3A0xca8bef4c01646fec!2z44CSODkxLTc2MTIg6bm_5YWQ5bO255yM5aSn5bO26YOh5aSp5Z-O55S65bmz5Zyf6YeO77yU77yY4oiS77yV!5e0!3m2!1sja!2sjp!4v1598191484880!5m2!1sja!2sjp" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></p>
         <p class=insta""><img src="img/Large Card.svg" alt=""></p>
       </div>
     </section>

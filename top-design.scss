@@ -1,0 +1,188 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+body {
+  background-color: #ffffff;
+  font-family: "Noto Sans Japanese", sans-serif;
+  width: 375px;
+  margin: 0 auto;
+  color: #313131;
+}
+header {
+  height: 70px;
+  background-color: burlywood;
+}
+.logo {
+  width: 140px;
+  color: #f7f7f7;
+  text-align: center;
+}
+.top-img {
+  height: 427px;
+  background-image: url(img/0376BBD2-DFD8-4937-89EF-7A2882839F44_1_201_a.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.head-name {
+  text-align: center;
+  padding: 12px 0;
+}
+.head-name h2 {
+  font-size: 22px;
+  position: relative;
+  display: inline-block;
+  padding: 0 55px;
+}
+.head-name p {
+  font-size: 18px;
+  position: relative;
+}
+
+h2:before,
+h2:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  display: inline-block;
+  width: 45px;
+  height: 1px;
+  background-color: lightseagreen;
+}
+
+h2:before {
+  left: 0;
+}
+h2:after {
+  right: 0;
+}
+section {
+  padding: 50px 0;
+}
+.topics {
+  height: 1217px;
+  padding: 0 34px;
+  background-color: #f5f5f5;
+}
+article {
+  height: 330px;
+  padding: 50px 0;
+}
+.topic-img img {
+  height: 200px;
+  width: 100%;
+}
+.topic-item {
+  background-color: #cdd6dd;
+  padding: 0 40px;
+}
+.topic-title {
+  font-size: 18px;
+}
+.topic-date {
+  font-size: 18px;
+}
+.topic-content {
+  font-size: 12px;
+}
+.gallery {
+}
+.galleries {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 15px;
+}
+
+.gallery-box {
+  height: 244px;
+  width: 50%;
+  padding: 10px 7px;
+}
+.gallery-box ul {
+  display: flex;
+}
+.gallery-img img {
+  width: 100%;
+  height: 157px;
+}
+.gallery-title {
+}
+.gallery-date {
+}
+.menu {
+  background-image: url("img/0964D0DD-398B-4E0F-9FA4-991E8E34A11E_1_201_a.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0 10px;
+}
+.menu-box {
+  display: flex;
+  flex-wrap: wrap;
+}
+.menu-one {
+  width: 171px;
+  background-color: #ffffff;
+  border-radius: 10%;
+  margin: 3px;
+}
+#menu-title-color {
+  color: #ffffff;
+}
+.menu-one li {
+  font-size: 13px;
+  border-bottom: 1px solid #c6bfbf;
+  padding: 10px 0;
+}
+.menu-sub-name {
+  border-bottom: 1px solid #c6bfbf;
+}
+.yen-font {
+  padding-left: 5%;
+}
+.stylist-box {
+  text-align: center;
+  padding: 20px;
+  color: #3b4043;
+}
+
+#stylist-name {
+  font-size: 30px;
+}
+#stylist-name-sub {
+  font-size: 20px;
+  padding: 10px 0;
+}
+#stylist-content {
+  padding: 10px 0;
+  line-height: 30px;
+  font-size: 16px;
+}
+
+.stylist-info img {
+  width: 288px;
+  height: 291px;
+  display: block;
+  margin: 0 auto;
+}
+.access-info {
+}
+.map {
+  height: 344px;
+}
+.insta {
+  width: 302px;
+  height: 384px;
+}
+.access-info p {
+  text-align: center;
+}
+
+.access-info img {
+  margin: 0 auto;
+  display: block;
+}
+footer {
+  height: 30px;
+  background-color: #3b4043;
+}
+footer p {
+  text-align: center;
+  color: #ffffff;
+}

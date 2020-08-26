@@ -4,7 +4,6 @@ body {
   font-family: "Noto Sans Japanese", sans-serif;
   width: 100%;
   color: #313131;
-  padding: 0 calc((100% - 1200px) / 2);
 }
 header {
   height: 120px;
@@ -67,9 +66,10 @@ h2:after {
 }
 section {
   padding: 50px 0;
+  padding: 0 calc((100% - 1200px) / 2);
 }
 .topics {
-  padding: 0 2rem;
+  padding: 0 calc((100% - 1200px) / 2);
 }
 article {
   height: 100%;
@@ -329,8 +329,8 @@ footer p {
 }
 
 .parent {
-  width: 681px;
-  height: 384px;
+  width: 100%;
+  height: 700px;
   top: 0;
   bottom: 0;
   left: 0;
@@ -347,8 +347,8 @@ footer p {
 svg {
   position: absolute;
   z-index: 1;
-  width: 681px;
-  height: 384px;
+  width: 100%;
+  height: 700px;
 }
 
 button {
@@ -525,7 +525,7 @@ circle {
   background-size: cover;
   color: #fff;
   font-size: 62px;
-  padding-top: 138px;
+  padding-top: 307px;
   font-weight: 800;
   font-family: "Heebo", sans-serif;
   text-align: center;
@@ -559,4 +559,28 @@ circle {
   .parent {
     margin-left: 1%;
   }
+}
+/* PC用のCSSはメディアクエリの外に記述する */
+
+@media screen and (max-width: 959px) {
+  /* 959px以下に適用されるCSS（タブレット用） */
+  .topic-item p {
+    font-size: 80%;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+  }
+}
+@media (max-width: 700px) {
+  .parent {
+    margin-left: 1%;
+  }
+  article {
+    padding: 50px 15px;
+    width: 50%;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* 480px以下に適用されるCSS（スマホ用） */
 }

@@ -15,7 +15,7 @@ header {
   font-size: 1.5rem;
   font-family: "Merriweather", serif;
   text-align: center;
-  width: 300px;
+  margin: 0 auto;
 }
 
 .top-img {
@@ -70,6 +70,9 @@ section {
 }
 .topics {
   padding: 0 calc((100% - 1200px) / 2);
+}
+.topics-color {
+  background-color: beige;
 }
 article {
   height: 100%;
@@ -142,6 +145,7 @@ article {
 .gallery-date {
 }
 .menu {
+  background-color: beige;
 }
 .menu-box {
   display: flex;
@@ -194,21 +198,18 @@ article {
   margin: 0 auto;
 }
 .access-info {
+  background-color: beige;
 }
 .access-box {
   display: flex;
-  justify-content: center;
-  align-content: center;
+  padding: 3%;
 }
 .access-box p {
 }
 .map {
-  border: solid 2px black;
+  border: solid 2px lightseagreen;
 }
-.insta {
-  width: 302px;
-  height: 384px;
-}
+
 .access-info p {
   text-align: center;
 }
@@ -322,26 +323,22 @@ footer p {
   box-shadow: 6px 0 25px rgba(0, 0, 0, 0.15);
 }
 @import url("https://fonts.googleapis.com/css?family=Heebo:800");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
+.top-image {
+  height: 700px;
+  position: relative;
+}
 .parent {
   width: 100%;
   height: 700px;
+  overflow: hidden;
+  border-radius: 16px;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   margin: auto auto;
-  overflow: hidden;
   position: absolute;
-  border-radius: 16px;
-  -webkit-box-shadow: 0 0 88px 5px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0 0 88px 5px rgba(0, 0, 0, 0.75);
-  box-shadow: 0 0 88px 5px rgba(0, 0, 0, 0.75);
 }
 
 svg {
@@ -398,22 +395,22 @@ circle {
 }
 
 .right {
-  margin-left: 628px;
-  margin-top: 168px;
+  margin-top: 335px;
   border: 1px solid #849494;
   background-color: transparent;
   transition: 0.5s;
+  left: 23%;
 }
 .right:hover {
   background-color: #fff;
 }
 
 .left {
-  margin-left: 0.5%;
-  margin-top: 168px;
+  margin-top: 335px;
   border: 1px solid #849494;
   background-color: transparent;
   transition: 0.5s;
+  left: 1%;
 }
 .left:hover {
   background-color: #fff;
@@ -510,7 +507,7 @@ circle {
 .slider {
   position: absolute;
   width: 400%;
-  height: 100%;
+  height: 700px;
   background: #000;
   display: inline-flex;
   overflow: hidden;
@@ -555,11 +552,6 @@ circle {
   stroke-width: 82px;
 }
 
-@media (max-width: 700px) {
-  .parent {
-    margin-left: 1%;
-  }
-}
 /* PC用のCSSはメディアクエリの外に記述する */
 
 @media screen and (max-width: 959px) {
@@ -571,10 +563,12 @@ circle {
     -webkit-line-clamp: 3;
     overflow: hidden;
   }
+  .yen-font {
+    padding-left: 85%;
+  }
 }
 @media (max-width: 700px) {
   .parent {
-    margin-left: 1%;
   }
   article {
     padding: 50px 15px;
@@ -583,4 +577,21 @@ circle {
 }
 @media screen and (max-width: 480px) {
   /* 480px以下に適用されるCSS（スマホ用） */
+  .topic-item p {
+    font-size: 80%;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+  }
+  .menu-one {
+    width: 100%;
+    padding: 3%;
+  }
+  .slide1,
+  .slide2,
+  .slide3,
+  .slide4 {
+    font-size: 40px;
+  }
 }

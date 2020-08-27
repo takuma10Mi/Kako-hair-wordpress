@@ -17,6 +17,9 @@ header {
   text-align: center;
   margin: 0 auto;
 }
+p {
+  font-family: "Merriweather", serif;
+}
 
 .top-img {
   height: 700px;
@@ -29,6 +32,7 @@ header {
 .head-name {
   text-align: center;
   padding: 12px 0;
+  font-family: "Merriweather", serif;
 }
 .head-name h2 {
   font-size: 46px;
@@ -55,7 +59,7 @@ h2:after {
   display: inline-block;
   width: 45px;
   height: 5px;
-  background-color: lightseagreen;
+  background-color: #63513b;
 }
 
 h2:before {
@@ -65,9 +69,12 @@ h2:after {
   right: 0;
 }
 section {
-  padding: 50px 0;
   padding: 0 calc((100% - 1200px) / 2);
 }
+.access-info {
+  padding: 2%;
+}
+
 .topics {
   padding: 0 calc((100% - 1200px) / 2);
 }
@@ -172,11 +179,6 @@ article {
 .yen-font {
   padding-left: 70%;
 }
-.stylist-box {
-  text-align: center;
-  padding: 20px;
-  color: #3b4043;
-}
 
 #stylist-name {
   font-size: 30px;
@@ -191,22 +193,66 @@ article {
   font-size: 16px;
 }
 
+.stylist-info {
+  display: flex;
+  padding: 5% 2%;
+}
+.stylist-info p {
+  width: 50%;
+}
+.stylist-box {
+  text-align: center;
+  padding: 20px;
+  color: #3b4043;
+  width: 50%;
+}
+.stylist-box p {
+  width: 100%;
+}
+
 .stylist-info img {
-  width: 288px;
-  height: 291px;
   display: block;
   margin: 0 auto;
 }
-.access-info {
-  background-color: beige;
+
+.background_test {
+  background-color: #f3ede5;
 }
 .access-box {
   padding: 3%;
+  display: flex;
+}
+.attention {
+  width: 50%;
+}
+.attention_box {
+  width: 90%;
+  height: 100%;
+  border: 2px solid #63513b;
+  text-align: center;
+  color: #030303;
+}
+
+.attention_box h2 {
+  padding: 30px 0;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+#attention_text {
+  width: 65%;
+  font-size: 17px;
+  line-height: 2;
+  margin-bottom: 2em;
+  padding: 3% 0 9%;
+  margin: 0 auto;
 }
 .access-box p {
+  width: 50%;
 }
+
 .map {
-  border: solid 2px lightseagreen;
+  border: solid 2px #63513b;
 }
 
 .access-info p {
@@ -323,6 +369,9 @@ footer p {
 }
 @import url("https://fonts.googleapis.com/css?family=Heebo:800");
 
+.top-main {
+  padding: 2%;
+}
 .top-image {
   height: 700px;
   position: relative;
@@ -550,7 +599,75 @@ circle {
 .streak {
   stroke-width: 82px;
 }
+.insta_btn2 {
+  /*ボタンの下地*/
+  color: #fff; /*文字・アイコン色*/
+  border-radius: 7px; /*角丸に*/
+  position: relative;
+  display: inline-block;
+  height: 50px; /*高さ*/
+  width: 190px; /*幅*/
+  text-align: center; /*中身を中央寄せ*/
+  font-size: 25px; /*文字のサイズ*/
+  line-height: 50px; /*高さと合わせる*/
+  background: -webkit-linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;
+  background: linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat; /*グラデーション①*/
+  overflow: hidden; /*はみ出た部分を隠す*/
+  text-decoration: none; /*下線は消す*/
+}
 
+.insta_btn2:before {
+  /*グラデーション②*/
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /*全体を覆う*/
+  height: 100%; /*全体を覆う*/
+  background: -webkit-linear-gradient(
+      15deg,
+      #ffdb2c,
+      rgb(249, 118, 76) 25%,
+      rgba(255, 77, 64, 0) 50%
+    )
+    no-repeat;
+  background: linear-gradient(
+      15deg,
+      #ffdb2c,
+      rgb(249, 118, 76) 25%,
+      rgba(255, 77, 64, 0) 50%
+    )
+    no-repeat;
+}
+
+.insta_btn2 .fa-instagram {
+  /*アイコン*/
+  font-size: 35px; /*アイコンサイズ*/
+  position: relative;
+  top: 4px; /*アイコン位置の微調整*/
+}
+
+.insta_btn2 span {
+  /*テキスト*/
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.insta_btn2:hover span {
+  /*ホバーで一周回転*/
+  -webkit-transform: rotateX(360deg);
+  -ms-transform: rotateX(360deg);
+  transform: rotateX(360deg);
+}
+.insta_btn .fa-instagram {
+  /*アイコン*/
+  color: #fff; /*白に*/
+  position: relative; /*z-indexを使うため*/
+  z-index: 2; /*グラデーションより前に*/
+  font-size: 35px; /*アイコンサイズ*/
+  line-height: 50px; /*高さと合わせる*/
+}
 /* PC用のCSSはメディアクエリの外に記述する */
 
 @media screen and (max-width: 959px) {
@@ -572,6 +689,22 @@ circle {
   article {
     padding: 50px 15px;
     width: 50%;
+  }
+  .stylist-info {
+    display: contents;
+  }
+  .stylist-info p {
+    padding-top: 6%;
+    width: 100%;
+  }
+  .stylist-box {
+    width: 100%;
+  }
+  .access-box {
+    display: contents;
+  }
+  .access-box p {
+    width: 100%;
   }
 }
 @media screen and (max-width: 480px) {

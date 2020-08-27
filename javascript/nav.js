@@ -128,7 +128,7 @@ document.onkeydown = (e) => {
   }
 };
 
-//for codepen header
+// for codepen header
 // setTimeout(() => {
 //  rightSlide();
 // }, 500);

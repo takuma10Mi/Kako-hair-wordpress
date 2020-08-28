@@ -668,6 +668,16 @@ circle {
   font-size: 35px; /*アイコンサイズ*/
   line-height: 50px; /*高さと合わせる*/
 }
+.fadein {
+  opacity: 0;
+  transform: translate(0, 50px);
+  transition: all 1500ms;
+}
+
+.fadein.scrollin {
+  opacity: 1;
+  transform: translate(0, 0);
+}
 /* PC用のCSSはメディアクエリの外に記述する */
 
 @media screen and (max-width: 959px) {

@@ -1,3 +1,4 @@
+alert("hello");
 var curpage = 1;
 var sliding = false;
 var click = true;
@@ -132,14 +133,3 @@ document.onkeydown = (e) => {
 // setTimeout(() => {
 //  rightSlide();
 // }, 500);
-
-$(window).scroll(function () {
-  $(".fadein").each(function () {
-    var elemPos = $(this).offset().top,
-      scroll = $(window).scrollTop(),
-      windowHeight = $(window).height();
-    if (scroll > elemPos - windowHeight + 100) {
-      $(this).addClass("scrollin");
-    }
-  });
-});

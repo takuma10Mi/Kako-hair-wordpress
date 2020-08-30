@@ -199,69 +199,30 @@
     <section class="topics" id="1">
       <div class="head-name">
         <h2>Topics</h2>
-        <p>トッピクス</p>
+        <p>トピックス</p>
       </div>
       <div class="container">
+      <?php $posts = get_posts('numberposts=6'); global $post; ?>
+    <?php if($posts): foreach($posts as $post): setup_postdata($post); ?>
         <article>
-          <p class="topic-img"><img src="<?php echo get_template_directory_uri()?>/img/Image@2x.png" /></p>
+        <a href="<?php the_permalink() ?>">
+          <p class="topic-img">
+            <?php if(has_post_thumbnail()): ?>
+              <img src="<?php the_post_thumbnail_url(); ?>">
+            <?php else: ?>
+              <img src="<?php echo get_template_directory_uri()?>/img/Large Card.svg">
+            <?php endif; ?>
+          </p>
           <div class="topic-item">
-            <p class="topic-title">タイトルが入ります</p>
-            <p class="topic-date">2020.01.01</p>
+            <p class="topic-title"><?php the_title(); ?></p>
+            <p class="topic-date"><?php the_time('Y年m月d日'); ?></p>
             <p class="topic-content">
-              親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした
+            <?php the_content(); ?>
             </p>
           </div>
+          </a>
         </article>
-        <article>
-          <p class="topic-img"><img src="<?php echo get_template_directory_uri()?>/img/Image@2x.png" /></p>
-          <div class="topic-item">
-            <p class="topic-title">タイトルが入ります</p>
-            <p class="topic-date">2020.01.01</p>
-            <p class="topic-content">
-              親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした
-            </p>
-          </div>
-        </article>
-        <article>
-          <p class="topic-img"><img src="<?php echo get_template_directory_uri()?>/img/Image@2x.png" /></p>
-          <div class="topic-item">
-            <p class="topic-title">タイトルが入ります</p>
-            <p class="topic-date">2020.01.01</p>
-            <p class="topic-content">
-              親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした
-            </p>
-          </div>
-        </article>
-        <article>
-          <p class="topic-img"><img src="<?php echo get_template_directory_uri()?>/img/Image@2x.png" /></p>
-          <div class="topic-item">
-            <p class="topic-title">タイトルが入ります</p>
-            <p class="topic-date">2020.01.01</p>
-            <p class="topic-content">
-              親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした
-            </p>
-          </div>
-        </article>
-        <article>
-          <p class="topic-img"><img src="<?php echo get_template_directory_uri()?>/img/Image@2x.png" /></p>
-          <div class="topic-item">
-            <p class="topic-title">タイトルが入ります</p>
-            <p class="topic-date">2020.01.01</p>
-            <p class="topic-content">
-              親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした
-            </p>
-          </div>
-        </article>
-        <article>
-          <p class="topic-img"><img src="<?php echo get_template_directory_uri()?>/img/Image@2x.png" /></p>
-          <div class="topic-item">
-            <p class="topic-title">タイトルが入ります</p>
-            <p class="topic-date">2020.01.01</p>
-            <p class="topic-content">
-              親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした
-            </p>
-          </div>
-        </article>
+        <?php endforeach; endif; ?>
       </div>
     </section>
     <section class="topics topics-color"" id="2">

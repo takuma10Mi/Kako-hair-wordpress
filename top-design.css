@@ -10,6 +10,7 @@ header {
   padding-top: 2%;
   position: relative;
 }
+
 .logo {
   color: #d9cab3;
   font-size: 1.5rem;
@@ -86,6 +87,11 @@ article {
   padding: 50px 0;
   width: 30%;
 }
+article a {
+  text-decoration: none;
+  color: #030303;
+}
+
 .topic-img {
   height: 50%;
 }

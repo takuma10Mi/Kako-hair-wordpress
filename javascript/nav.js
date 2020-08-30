@@ -1,4 +1,3 @@
-alert("hello");
 var curpage = 1;
 var sliding = false;
 var click = true;

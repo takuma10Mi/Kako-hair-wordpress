@@ -231,48 +231,7 @@
         <p>ギャラリー</p>
       </div>
       <div class="container">
-        <article>
-          <p class="topic-img"><img src="<?php echo get_template_directory_uri()?>/img/Image@2x.png" /></p>
-          <div class="topic-item">
-            <p class="topic-title">タイトルが入ります</p>
-            <p class="topic-date">2020.01.01</p>
-          </div>
-        </article>
-        <article>
-          <p class="topic-img"><img src="<?php echo get_template_directory_uri()?>/img/Image@2x.png" /></p>
-          <div class="topic-item">
-            <p class="topic-title">タイトルが入ります</p>
-            <p class="topic-date">2020.01.01</p>
-          </div>
-        </article>
-        <article>
-          <p class="topic-img"><img src="<?php echo get_template_directory_uri()?>/img/Image@2x.png" /></p>
-          <div class="topic-item">
-            <p class="topic-title">タイトルが入ります</p>
-            <p class="topic-date">2020.01.01</p>
-          </div>
-        </article>
-        <article>
-          <p class="topic-img"><img src="<?php echo get_template_directory_uri()?>/img/Image@2x.png" /></p>
-          <div class="topic-item">
-            <p class="topic-title">タイトルが入ります</p>
-            <p class="topic-date">2020.01.01</p>
-          </div>
-        </article>
-        <article>
-          <p class="topic-img"><img src="<?php echo get_template_directory_uri()?>/img/Image@2x.png" /></p>
-          <div class="topic-item">
-            <p class="topic-title">タイトルが入ります</p>
-            <p class="topic-date">2020.01.01</p>
-          </div>
-        </article>
-        <article>
-          <p class="topic-img"><img src="<?php echo get_template_directory_uri()?>/img/Image@2x.png" /></p>
-          <div class="topic-item">
-            <p class="topic-title">タイトルが入ります</p>
-            <p class="topic-date">2020.01.01</p>
-          </div>
-        </article>
+      <?php echo do_shortcode('[instagram-feed]'); ?>
       </div>
     </section>
     <section class="menu" id="3">

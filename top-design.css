@@ -182,7 +182,8 @@ article a {
   border-bottom: 1px solid #c6bfbf;
 }
 .yen-font {
-  padding-left: 70%;
+  padding-left: 90%;
+  text-align: right;
 }
 
 #stylist-name {
@@ -253,6 +254,7 @@ article a {
   margin-bottom: 2em;
   padding: 3% 0 9%;
   margin: 0 auto;
+  text-align: left;
 }
 .access-box p {
   width: 50%;
@@ -606,6 +608,9 @@ circle {
 .streak {
   stroke-width: 82px;
 }
+.attention_insta_btn {
+  padding: 4% 0;
+}
 .insta_btn2 {
   /*ボタンの下地*/
   color: #fff; /*文字・アイコン色*/
@@ -711,6 +716,19 @@ circle {
   }
   .stylist-info img {
     width: 100%;
+  }
+  .access-box {
+    display: contents;
+  }
+  .access-box p {
+    width: 100%;
+  }
+  /* iframe {
+    height: 100%;
+  } */
+
+  #attention_text {
+    width: 90%;
   }
 }
 @media (max-width: 700px) {

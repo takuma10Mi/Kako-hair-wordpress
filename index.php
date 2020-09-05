@@ -239,16 +239,28 @@
         <h2 id="menu-title-color">Menu</h2>
         <p id="menu-title-color">料金表</p>
       </div>
+      <?php $posts = get_posts('numberposts=6&category_name=menu'); global $post; ?>
+    <?php if($posts): foreach($posts as $post): setup_postdata($post); ?>
+      <?php
+      $custom_menu_name_en = SCF::get( 'custom_menu_name_en' );
+      $custom_menu_name_ja = SCF::get( 'custom_menu_name_ja' );
+      // $custom_plan = SCF::get( 'custom_plan' );
+      // $custom_fee = SCF::get( 'custom_fee' );
+      ?>
       <div class="menu-box">
         <div class="menu-one">
-          <p class="menu-sub-name">Cut</p>
-          <p class="menu-sub-name-border">カットメニュー</p>
+          <p class="menu-sub-name"><?php echo $custom_menu_name_en; ?></p>
+          <p class="menu-sub-name-border"><?php echo $custom_menu_name_ja; ?></p>
           <ul>
-            <li>カット(小学生まで)<span class="yen-font">&yen;1200</span></li>
-            <li>カット(小学生まで)<span class="yen-font">&yen;1200</span></li>
-            <li>カット(小学生まで)<span class="yen-font">&yen;1200</span></li>
+          <?php
+            $custom_plan_groups = SCF::get( 'custom_plan_groups' );
+            foreach ($custom_plan_groups as $custom_plan_group ) {
+          ?>
+            <li><?php echo $custom_plan_group["custom_plan"]?><br><span class="yen-font">&yen;<?php echo $custom_plan_group["custom_fee"]?></span></li>
+            <?php } ?>
           </ul>
         </div>
+        <?php endforeach; endif; ?>
         <div class="menu-one">
           <p class="menu-sub-name">Cut</p>
           <p class="menu-sub-name-border">カットメニュー</p>
@@ -284,9 +296,11 @@
                 女性専用の完全予約制とさせて頂きます。
                 ※男性のお客様は既存の顧客様のみとさせて頂きます。
                 お電話・メールのいずれかからご予約お願いします。</p>
+                <div class="attention_insta_btn">
                 <a href="https://www.instagram.com/hairandmakekacco/" class="insta_btn2">
                   <i class="fab fa-instagram"></i> <span>To Instagram</span>
                 </a>
+                </div>
             </div>
           </div>
           <p class="map">

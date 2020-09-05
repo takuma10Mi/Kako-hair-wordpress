@@ -261,7 +261,7 @@
       </div>
     </section>
     <section class="stylist-info" id="4">
-      <p><img src="<?php echo get_template_directory_uri()?>/img/グループ 1536.svg" alt="" /></p>
+      <p><img src="<?php echo get_template_directory_uri()?>/img/stylist_A.png" alt="" /></p>
       <div class="stylist-box">
         <p id="stylist-name">山田太郎</p>
         <p id="stylist-name-sub">stylist</p>
@@ -284,7 +284,7 @@
                 女性専用の完全予約制とさせて頂きます。
                 ※男性のお客様は既存の顧客様のみとさせて頂きます。
                 お電話・メールのいずれかからご予約お願いします。</p>
-                <a href="#" class="insta_btn2">
+                <a href="https://www.instagram.com/hairandmakekacco/" class="insta_btn2">
                   <i class="fab fa-instagram"></i> <span>To Instagram</span>
                 </a>
             </div>

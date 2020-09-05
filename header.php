@@ -4,7 +4,7 @@
   <?php wp_head(); ?>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta charset="utf-8" />
-    <title>fiber</title>
+    <title>hair and make kacco</title>
     <meta name="description" content="" />
     <meta name="author" content="fiber" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -20,7 +20,7 @@
     <header>
       <div class="logo">
         <p>hair and make</p>
-        <p>kako</p>
+        <p>kacco</p>
       </div>
       <div id="nav-drawer">
         <input id="nav-input" type="checkbox" class="nav-unshown" />

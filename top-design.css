@@ -197,8 +197,11 @@ article a {
   padding: 10px 0;
   line-height: 30px;
   font-size: 16px;
+  text-align: left;
 }
-
+.stylist-content-span {
+  border-bottom: solid 3px #87cefa;
+}
 .stylist-info {
   display: flex;
   padding: 5% 2%;
@@ -239,6 +242,7 @@ article a {
   border: 2px solid #63513b;
   text-align: center;
   background-color: #ffffff;
+  padding: 5% 0;
 }
 
 .attention_box h2 {
@@ -263,6 +267,7 @@ article a {
 
 .map {
   border: solid 2px #63513b;
+  height: 100%;
 }
 
 .access-info p {
@@ -723,9 +728,6 @@ circle {
   .access-box p {
     width: 100%;
   }
-  /* iframe {
-    height: 100%;
-  } */
 }
 @media (max-width: 700px) {
   article {

@@ -188,10 +188,10 @@
                 r="660"
               />
             </svg>
-            <div id="slide1" class="slide1 up1">MOUNTAIN</div>
-            <div id="slide2" class="slide2">BEACH</div>
-            <div id="slide3" class="slide3">FOREST</div>
-            <div id="slide4" class="slide4">DESERT</div>
+            <div id="slide1" class="slide1 up1">Welcome to kacco</div>
+            <div id="slide2" class="slide2">Welcome to kacco</div>
+            <div id="slide3" class="slide3">Welcome to kacco</div>
+            <div id="slide4" class="slide4">Welcome to kacco</div>
           </div>
         </div>
       </div>
@@ -266,10 +266,13 @@
     <section class="stylist-info" id="4">
       <p><img src="<?php echo get_template_directory_uri()?>/img/stylist_A.png" alt="" /></p>
       <div class="stylist-box">
-        <p id="stylist-name">山田太郎</p>
+        <p id="stylist-name">高田　和子</p>
         <p id="stylist-name-sub">stylist</p>
         <p id="stylist-content">
-          親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。なぜそんな無闇をしたと聞く人があるかも知れぬ。別段深い理由でもない。新築の二階から首を出していたら、同級生の一人が冗談に、いくら威張っても、そこから飛び降りる事は出来まい。弱虫やーい。と囃したからである。小使に負ぶさって帰って来た時、おやじが大きな眼をして二階ぐらいから飛び降りて腰を抜かす奴があるかと云ったから、この次は抜かさずに飛んで見せますと答えた。
+          大阪のサロンで25年間勤務し、その内７年間を大阪市内の「LIM店」の店長として勤務しておりました。<br>
+          2018年5月に南の島に憧れて徳之島に移住。
+          得意技術は縮毛矯正ナチュラルストレート技術、ハイライトヘアカラー技術。
+          毛量調整が得意で頭頂部のペチャンコ、えり足の生えグセが悪くてショートをあきらめているなどの<span class="stylist-content-span">髪のお悩み解決</span>についても提案させていただきます。
         </p>
       </div>
     </section>
@@ -304,8 +307,7 @@
                     <i class="fab fa-instagram"></i> <span>To Instagram</span>
                   </a>
                 </div>
-                <div class="line-it-button" data-lang="ja" data-type="friend" data-lineid="@261mvral" style="display: none;"></div>
-                <script src="https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js" async="async" defer="defer"></script>
+                <a href="https://line.me/R/ti/p/%40261mvral"><img src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png" alt="友だち追加" height="50"></a>
             </div>
           </div>
           <p class="map">

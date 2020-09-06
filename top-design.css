@@ -181,6 +181,9 @@ a {
   border-bottom: 1px solid #c6bfbf;
   padding: 10px 0;
 }
+#menu_plan_name {
+  font-weight: 600;
+}
 .menu-sub-name {
   text-align: center;
 }

@@ -256,7 +256,7 @@
             $custom_plan_groups = SCF::get( 'custom_plan_groups' );
             foreach ($custom_plan_groups as $custom_plan_group ) {
           ?>
-            <li><?php echo $custom_plan_group["custom_plan"]?><br><span class="yen-font">&yen;<?php echo $custom_plan_group["custom_fee"]?></span></li>
+            <li><span id="menu_plan_name"><?php echo $custom_plan_group["custom_plan"]?></span><br><?php echo $custom_plan_group["custom_plan_content"]?><br><span class="yen-font">&yen;<?php echo $custom_plan_group["custom_fee"]?></span></li>
             <?php } ?>
           </ul>
         </div>

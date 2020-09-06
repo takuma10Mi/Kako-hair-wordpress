@@ -18,10 +18,12 @@
   </head>
   <body>
     <header>
-      <div class="logo">
-        <p>hair and make</p>
-        <p>kacco</p>
-      </div>
+      <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+        <div class="logo">
+          <p>hair and make</p>
+          <p>kacco</p>
+        </div>
+      </a>
       <div id="nav-drawer">
         <input id="nav-input" type="checkbox" class="nav-unshown" />
         <label id="nav-open" for="nav-input"><span></span></label>

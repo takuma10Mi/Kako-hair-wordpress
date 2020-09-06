@@ -96,7 +96,9 @@ article a {
   text-decoration: none;
   color: #030303;
 }
-
+a {
+  text-decoration: none;
+}
 .topic-img {
   height: 50%;
 }
@@ -129,6 +131,10 @@ article a {
 .topic-item p {
   margin: 0;
   padding: 0;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
 }
 .topic-title {
   font-size: 18px;
@@ -139,6 +145,7 @@ article a {
 .topic-content {
   font-size: 12px;
 }
+
 .galleries {
   display: flex;
   flex-wrap: wrap;
@@ -699,7 +706,13 @@ circle {
 #sb_instagram #sbi_load {
   display: none;
 }
-.line-it-button {
+.pageTitle {
+  text-align: center;
+}
+.main {
+  padding: 10% 20%;
+  text-align: left;
+  line-height: 30px;
 }
 /* PC用のCSSはメディアクエリの外に記述する */
 

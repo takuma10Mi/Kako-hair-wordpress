@@ -714,6 +714,11 @@ circle {
   text-align: left;
   line-height: 30px;
 }
+.single_post_img {
+  text-align: center;
+}
+.single_post_img img {
+}
 /* PC用のCSSはメディアクエリの外に記述する */
 
 @media screen and (max-width: 959px) {

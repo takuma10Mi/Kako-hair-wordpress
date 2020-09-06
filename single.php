@@ -8,6 +8,7 @@
         <main class="main">
             <div class="container">
                 <div class="content">
+								<p class="single_post_img"><?php the_post_thumbnail('thumbnail'); ?></p>
                     <?php the_content(); ?>
                 </div>
             </div>

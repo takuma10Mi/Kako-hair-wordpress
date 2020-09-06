@@ -18,6 +18,11 @@ header {
   text-align: center;
   margin: 0 auto;
 }
+#access_logo {
+  width: 100%;
+  background-color: #ffffff;
+  color: #63513b;
+}
 p {
   font-family: "Merriweather", serif;
 }
@@ -134,8 +139,6 @@ article a {
 .topic-content {
   font-size: 12px;
 }
-.gallery {
-}
 .galleries {
   display: flex;
   flex-wrap: wrap;
@@ -153,10 +156,6 @@ article a {
   width: 100%;
   height: 157px;
 }
-.gallery-title {
-}
-.gallery-date {
-}
 .menu {
   background-color: #efefef;
 }
@@ -167,10 +166,11 @@ article a {
 .menu-one {
   width: 50%;
   padding: 3%;
+  font-size: 20px;
 }
 
 .menu-one li {
-  font-size: 13px;
+  font-size: 16px;
   border-bottom: 1px solid #c6bfbf;
   padding: 10px 0;
 }
@@ -182,8 +182,8 @@ article a {
   border-bottom: 1px solid #c6bfbf;
 }
 .yen-font {
-  padding-left: 90%;
   text-align: right;
+  display: block;
 }
 
 #stylist-name {
@@ -238,7 +238,7 @@ article a {
   height: 100%;
   border: 2px solid #63513b;
   text-align: center;
-  color: #030303;
+  background-color: #ffffff;
 }
 
 .attention_box h2 {
@@ -248,13 +248,14 @@ article a {
   letter-spacing: 0.05em;
 }
 #attention_text {
-  width: 65%;
+  width: 100%;
   font-size: 17px;
   line-height: 2;
   margin-bottom: 2em;
-  padding: 3% 0;
+  padding: 3%;
   margin: 0 auto;
-  text-align: left;
+  text-align: center;
+  color: #63513b;
 }
 .access-box p {
   width: 50%;
@@ -693,6 +694,8 @@ circle {
 #sb_instagram #sbi_load {
   display: none;
 }
+.line-it-button {
+}
 /* PC用のCSSはメディアクエリの外に記述する */
 
 @media screen and (max-width: 959px) {
@@ -703,9 +706,6 @@ circle {
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
     overflow: hidden;
-  }
-  .yen-font {
-    padding-left: 85%;
   }
   .attention {
     width: 100%;
@@ -726,10 +726,6 @@ circle {
   /* iframe {
     height: 100%;
   } */
-
-  #attention_text {
-    width: 90%;
-  }
 }
 @media (max-width: 700px) {
   article {

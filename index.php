@@ -202,7 +202,7 @@
         <p>トピックス</p>
       </div>
       <div class="container">
-      <?php $posts = get_posts('numberposts=6'); global $post; ?>
+      <?php $posts = get_posts('numberposts=6&category_name=blog'); global $post; ?>
     <?php if($posts): foreach($posts as $post): setup_postdata($post); ?>
         <article>
         <a href="<?php the_permalink() ?>">
@@ -239,7 +239,8 @@
         <h2 id="menu-title-color">Menu</h2>
         <p id="menu-title-color">料金表</p>
       </div>
-      <?php $posts = get_posts('numberposts=6&category_name=menu'); global $post; ?>
+      <?php $posts = get_posts('numberposts=6&category_name=menu&order=ASC'); global $post; ?>
+      <div class="menu-box">
     <?php if($posts): foreach($posts as $post): setup_postdata($post); ?>
       <?php
       $custom_menu_name_en = SCF::get( 'custom_menu_name_en' );
@@ -247,7 +248,6 @@
       // $custom_plan = SCF::get( 'custom_plan' );
       // $custom_fee = SCF::get( 'custom_fee' );
       ?>
-      <div class="menu-box">
         <div class="menu-one">
           <p class="menu-sub-name"><?php echo $custom_menu_name_en; ?></p>
           <p class="menu-sub-name-border"><?php echo $custom_menu_name_ja; ?></p>
@@ -261,15 +261,6 @@
           </ul>
         </div>
         <?php endforeach; endif; ?>
-        <div class="menu-one">
-          <p class="menu-sub-name">Cut</p>
-          <p class="menu-sub-name-border">カットメニュー</p>
-          <ul>
-            <li>カット(小学生まで)<span class="yen-font">&yen;1200</span></li>
-            <li>カット(小学生まで)<span class="yen-font">&yen;1200</span></li>
-            <li>カット(小学生まで)<span class="yen-font">&yen;1200</span></li>
-          </ul>
-        </div>
       </div>
     </section>
     <section class="stylist-info" id="4">
@@ -291,16 +282,30 @@
         <div class="access-box">
           <div class="attention">
             <div class="attention_box">
-              <h2>ご予約について</h2>
-              <p id="attention_text">プライベートサロンとなりますので、
-                女性専用の完全予約制とさせて頂きます。
-                ※男性のお客様は既存の顧客様のみとさせて頂きます。
-                お電話・メールのいずれかからご予約お願いします。</p>
+            <div class="logo">
+              <p id="access_logo">hair and make</p>
+              <p id="access_logo">kacco</p>
+            </div>
+              <p id="attention_text">
+                891-7612<br>
+                大島郡天城町平土野48-5<br>
+                完全予約制ですのでインスタグラムDM・LINE@での<br>
+                ご予約をお願い致します。<br>
+                ①〜③の内容を記載してメッセージを送信してください。
+                <ul>
+                  <li>
+                  <li>①フルネームでのお名前</li>
+                  <li>②ご希望のお日にち、時間。</li>
+                  <li>③ご希望のメニュー</li>
+                </ul>
+                </p>
                 <div class="attention_insta_btn">
-                <a href="https://www.instagram.com/hairandmakekacco/" class="insta_btn2">
-                  <i class="fab fa-instagram"></i> <span>To Instagram</span>
-                </a>
+                  <a href="https://www.instagram.com/hairandmakekacco/" class="insta_btn2">
+                    <i class="fab fa-instagram"></i> <span>To Instagram</span>
+                  </a>
                 </div>
+                <div class="line-it-button" data-lang="ja" data-type="friend" data-lineid="@261mvral" style="display: none;"></div>
+                <script src="https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js" async="async" defer="defer"></script>
             </div>
           </div>
           <p class="map">
